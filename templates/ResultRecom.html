@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+       
+</head>
+<body> 
+    <form action ="{{url_for('index')}}" method = "post">
+    <input type = "submit" value = "Retour " />
+    <center><h2>Articles recommandés pour l'utilisateur :  {{ user_id }}</h2></center>
+
+    <center><h3>Article 1 : {{ reco0 }}</h3></center>
+    <center><h3>Article 2 : {{ reco1 }}</h3></center>
+    <center><h3>Article 3 : {{ reco2 }}</h3></center>
+    <center><h3>Article 4 : {{ reco3 }}</h3></center>
+    <center><h3>Article 5 : {{ reco4 }}</h3></center>
+
+  </form>   
+</body>
+</html>

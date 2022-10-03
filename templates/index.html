@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web App P9</title>
+</head>
+<body>
+ 
+ <center><img src="{{ logo }}" alt="Logo introuvable" height="300px" width="600px"></center><br>
+ 
+ <center><form action ="{{url_for('ResultRecom')}}" method = "post"></center>
+ <center><h3>URL DE L'AZURE FONCTION DE RECOMMANDATION </h3></center>
+ <center><input type = "text" name = "url_api" id="url_api"size="120" maxlength="1000" value="https://contentbasep9.azurewebsites.net/api/httptrigger1"/></center><br>
+ <h3><for="selection de l'utilisateur ">SELECTION DE L'UTILISATEUR : </h3>
+ 
+ <input type = "text" name = "user_id" id="user_id"value="1"/>
+ <input type = "submit" value = "Envoi des recommandations " />
+</body>
+
+
+</html>
